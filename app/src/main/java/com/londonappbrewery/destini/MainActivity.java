@@ -36,15 +36,15 @@ public class MainActivity extends AppCompatActivity {
                     mT1_ans1.setText(R.string.T3_Ans1);
                     mT1_ans2.setText(R.string.T3_Ans2);
                     mStoryIndex = 3;
-                }else if (mStoryIndex == 3){
-                    mT1_story.setText(R.string.T6_End);
-                    mT1_ans1.setVisibility(View.GONE);
-                    mT1_ans2.setVisibility(View.GONE);
                 }else if (mStoryIndex ==2){
                     mT1_story.setText(R.string.T3_Story);
                     mT1_ans1.setText(R.string.T3_Ans1);
                     mT1_ans2.setText(R.string.T3_Ans2);
                     mStoryIndex = 3;
+                }else{
+                    mT1_story.setText(R.string.T6_End);
+                    mT1_ans1.setVisibility(View.GONE);
+                    mT1_ans2.setVisibility(View.GONE);
                 }
             }
         });
@@ -59,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
                     mT1_ans1.setText(R.string.T2_Ans1);
                     mT1_ans2.setText(R.string.T2_Ans2);
                     mStoryIndex = 2;
-                }else if(mStoryIndex == 3){
-                    mT1_story.setText(R.string.T5_End);
-                    mT1_ans1.setVisibility(View.GONE);
-                    mT1_ans2.setVisibility(View.GONE);
                 }else if(mStoryIndex == 2){
                     mT1_story.setText(R.string.T4_End);
+                    mT1_ans1.setVisibility(View.GONE);
+                    mT1_ans2.setVisibility(View.GONE);
+                }else{
+                    mT1_story.setText(R.string.T5_End);
                     mT1_ans1.setVisibility(View.GONE);
                     mT1_ans2.setVisibility(View.GONE);
                 }
